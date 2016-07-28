@@ -52,8 +52,7 @@ describe('boast-server-jwt', function() {
           //console.log(app);
           sinon.assert.callCount(expressAppStub, 1);
           sinon.assert.callCount(unlessSpy, 0);
-
-
+        
           done();
         })
         .catch(handleError);
@@ -76,6 +75,13 @@ describe('boast-server-jwt', function() {
           done();
         })
         .catch(handleError);
+    });
+
+    it('requires express app as first argument', function() {
+      var excludeRoutes = undefined;
+      var expressAppFake = undefined;
+
+      expect(fixture.enforceJwtPolicy.bind(fixture, expressAppFake, excludeRoutes)).to.throw();
     });
 
   });
