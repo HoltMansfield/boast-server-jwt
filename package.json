@@ -1,0 +1,32 @@
+{
+  "name": "boast-server-jwt",
+  "version": "0.0.0",
+  "description": "A module for working with JWT's",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha 'tests/**/*tests.js' --reporter spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HoltMansfield/boast-server-jwt.git"
+  },
+  "keywords": [
+    "boast-cli",
+    "boast",
+    "JWT"
+  ],
+  "author": "c8 admin <holt.mansfield@c8management.com> (c8management.com)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HoltMansfield/boast-server-jwt/issues"
+  },
+  "homepage": "https://github.com/HoltMansfield/boast-server-jwt#readme",
+  "dependencies": {
+    "bluebird": "^3.4.1",
+    "chai": "^3.5.0",
+    "express-jwt": "^3.4.0",
+    "mocha": "^2.5.3",
+    "proxyquire": "^1.7.10",
+    "sinon": "^1.17.5"
+  }
+}
